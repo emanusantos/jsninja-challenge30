@@ -27,23 +27,28 @@
   var app = (function() {
     return {
       init: function() {
-        console.log('init');
         this.companyInfo();
         this.initEvents();
       },
+
 
       initEvents: function initEvents() {
         DOM('[data-js="form-register"]').on('submit', this.handleSubmit);
       },
 
+
       handleSubmit: function handleSubmit(e) {
+
         e.preventDefault();
         console.log('Submitted!');
+
         var $tableCar = DOM('[data-js="table-car"]').get();
         $tableCar.appendChild(app.createNewCar());
       },
 
+
       createNewCar: function createNewCar() {
+        
         var $fragment = document.createDocumentFragment();
         var $tr = document.createElement('tr');
         var $tdImage = document.createElement('td');
