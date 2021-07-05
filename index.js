@@ -23,6 +23,9 @@
     nesse arquivo, dentro do `console.log`, o link para o pull request no seu
     projeto.
   */
+
+    console.log(
+    'Link do pull request do seu projeto: https://github.com/mizaelucas/jsninja-challenge30/pull/1');
   
   var app = (function() {
     return {
@@ -48,7 +51,7 @@
 
 
       createNewCar: function createNewCar() {
-        
+
         var $fragment = document.createDocumentFragment();
         var $tr = document.createElement('tr');
         var $tdImage = document.createElement('td');
